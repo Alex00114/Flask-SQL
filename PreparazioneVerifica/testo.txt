@@ -1,0 +1,16 @@
+Realizzare un sito web che permette all'utente di visualizzare una serie di informazioni riguardanti la società Bike Stores.
+
+La home page del sito deve permettere all'utente di scegliere una tra le seguenti tre opzioni:
+1. Numero prodotti per ogni categoria;
+2. Numero ordini per ogni store;
+3. Numero di prodotti per ogni brand;
+4. L'elenco di prodotti che iniziano con una certa stringa di carattere;
+Una volta effettuata la scelta l'utente clicca su un bottone che fornisce le informazioni richieste.
+
+Utilizzare Bootstrap per un interfaccia grafica.
+
+
+
+
+
+pip install flask pandas pymssql matplotlib
