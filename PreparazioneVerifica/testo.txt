@@ -13,4 +13,4 @@ Utilizzare Bootstrap per un interfaccia grafica.
 
 
 
-pip install flask pandas pymssql matplotlib
+pip install flask pandas pymssql matplotlib geopandas contextily
