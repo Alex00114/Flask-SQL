@@ -1,0 +1,13 @@
+Realizzare un sito web che permetta di visualizzare l'elenco dei primi 10 clienti che hanno speso di più.
+Il maneger di BikeStore si collega alla rotta /bestCustomers e riceve l'elenco dei clienti.
+Cliccando poi sull'ID di uno dei clienti, si deve poter visualizzare l'elenco degli ordini effettuati.
+Utilizzare Bootstrap per l'interfaccia grafica.
+
+
+
+
+
+
+
+
+pip install flask pandas pymssql matplotlib
