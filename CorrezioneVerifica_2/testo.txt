@@ -1,0 +1,14 @@
+Realizzare un sito web che permetta di visualizzare le informazioni riguardanti i clienti.
+Un componente dello staff richiama la rotta /infoUser dove sono presenti due text per l'inserimento del nome e del cognome del cliente ed un bottone per inviare le informazioni,
+Una volta inviate, il sito risponde con tutte le informazioni relative a quel cliente, una sotto l'altra.
+Se il cliente non esiste, deve essere visualizzato un opportuno messaggio di errore.
+Utilizzare Bootstrap per l'interfaccia grafica di tutte le pagine.
+
+
+
+
+
+
+
+
+pip install flask pandas pymssql matplotlib
