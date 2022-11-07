@@ -1,0 +1,13 @@
+Realizzare un sito web cyhe permetta di visualizzare tutti i dipendenti che lavorano in un certo store.
+Il maneger inserisce il nome dello store e clicca su un bottone che invia i dati al server.
+Quest'ultimo accede al database e restituisce i nomi e i cognomi dei dipendenti di quello store.
+Se il nome dello store non è presente, deve essere restituito un opportuno messaggio di errore.
+Tutta la parte grafica deve essere gestita con Bootstrap.
+
+
+
+
+
+
+
+pip install flask pandas pymssql matplotlib
