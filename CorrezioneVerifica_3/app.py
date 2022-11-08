@@ -20,10 +20,9 @@ def home():
 
 @app.route("/bestCustomers", methods=["GET"])
 def bestCustomers():
-    query = 'SELECT TOP 10 customers.customer_id, customers.first_name, customers.last_name ,SUM(list_price) as spesa_totale FROM sales.customers INNER JOIN sales.orders ON sales.customers.customer_id = sales.orders.customer_id INNER JOIN sales.order_items ON sales.order_items.order_id = sales.orders.order_id GROUP BY customers.customer_id, customers.first_name, customers.last_name ORDER BY SUM(list_price) DESC '
+    query = 'SELECT TOP 10 customers.customer_id, customers.first_name, customers.last_name ,SUM(list_price * quantity) as spesa_totale FROM sales.customers INNER JOIN sales.orders ON sales.customers.customer_id = sales.orders.customer_id INNER JOIN sales.order_items ON sales.order_items.order_id = sales.orders.order_id GROUP BY customers.customer_id, customers.first_name, customers.last_name ORDER BY spesa_totale DESC '
     #INNER JOIN sales.oder_items ON sales.orders.order_id = sales.order_items.order_id
     tabella = pd.read_sql(query,conn)
-    print(tabella.columns.values)
     return render_template("bestCustomers.html", nomiColonne = tabella.columns.values, dati = tabella.values)
 
 
